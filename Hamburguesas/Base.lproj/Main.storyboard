@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de Pais" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afj-DI-qq1">
+                                <rect key="frame" x="0.0" y="129" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUk-xj-RzP">
+                                <rect key="frame" x="0.0" y="173" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euE-HB-hOT">
+                                <rect key="frame" x="0.0" y="210" width="600" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Quiero una hamburguesa!">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="mostrarPaisHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="TcA-0F-0oG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XUk-xj-RzP" firstAttribute="top" secondItem="afj-DI-qq1" secondAttribute="bottom" constant="23" id="4jm-7c-zIl"/>
+                            <constraint firstItem="afj-DI-qq1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5l8-dm-zQs"/>
+                            <constraint firstItem="afj-DI-qq1" firstAttribute="leading" secondItem="XUk-xj-RzP" secondAttribute="leading" id="Eho-z8-WMZ"/>
+                            <constraint firstItem="afj-DI-qq1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="109" id="KYC-Yz-UnV"/>
+                            <constraint firstAttribute="trailing" secondItem="afj-DI-qq1" secondAttribute="trailing" id="L2J-wg-6UE"/>
+                            <constraint firstItem="afj-DI-qq1" firstAttribute="trailing" secondItem="XUk-xj-RzP" secondAttribute="trailing" id="YZh-9h-840"/>
+                            <constraint firstItem="XUk-xj-RzP" firstAttribute="leading" secondItem="euE-HB-hOT" secondAttribute="leading" id="bcE-k1-ff9"/>
+                            <constraint firstItem="XUk-xj-RzP" firstAttribute="trailing" secondItem="euE-HB-hOT" secondAttribute="trailing" id="pdV-bM-kRx"/>
+                            <constraint firstItem="euE-HB-hOT" firstAttribute="top" secondItem="XUk-xj-RzP" secondAttribute="bottom" constant="16" id="tLH-nb-2vb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="etiquetaHamburguesa" destination="XUk-xj-RzP" id="hcg-Qn-3Ux"/>
+                        <outlet property="etiquetaPais" destination="afj-DI-qq1" id="VL2-ik-y0g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="361"/>
+        </scene>
+    </scenes>
+</document>
